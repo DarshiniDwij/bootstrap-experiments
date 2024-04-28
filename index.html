@@ -12,39 +12,52 @@
         <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+    <style>
+
+        .img-container{
+
+            background-image: url("/images/Thank.jpeg");
+            height:300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            background-size: cover;
+        }
+
+        @media screen and (max-width : 600px) {
+            .img-container{
+                display: none;
+            }
+            
+        }
+
+
+    </style>
+
     </head>
     <body>
 
         <header style="display: block; background-color: antiquewhite;text-align: center;">
-            <i class="bi bi-brightness-alt-high h1"></i>
+            <div><i class="bi bi-brightness-alt-high h1"></i>
+                <h1>Bootstrap Examples</h1></div>
+        </header>  
 
-        
-            <h1>Bootstrap Examples</h1>
-            <!-- <div>
-            <nav>
-                <a href="index.html">Home</a>
-            </nav>
-            <nav>
-                <a href="Login.html">Login</a>
-            </nav>
-            <nav>
-                <a href="animalscards.html">Cards</a>
-            </nav>
-            </div> -->
+            <div class="img-container">
+                <div class="inner-container">
+                    
+                </div>
+            </div>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                
-                    <img src="/images/image.png" width="30" height="30" alt="">
+                    <img src="/images/logo.png" width="30" height="30" alt="">
                     <span class="navbar-brand h1" >StoryTime </span>
-                  <!-- <span class="navbar-brand mb-0 h1">StoryTime</span> -->
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button> -->
+                  
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="nav nav-tabs">
                       <li class="nav-item active">
-                        <a class="nav-link" href="/index.html">HOME</a>
+                        <a class="nav-link" aria-current="HOME" href="/index.html">HOME</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="/Login.html">LOGIN</a>
